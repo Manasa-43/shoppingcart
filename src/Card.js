@@ -11,7 +11,7 @@ export default function Card({prodItem,addItem}){
                     <img src= {product.tinyImage}/>
                     <div>Name : {product.productName}</div>
                     <div>Price : {product.productPrice}/-</div>
-                    <Button color = "success" onClick ={()=>(addItem(product))}>Buy Me</Button>
+                    <Button color = "danger" onClick ={()=>(addItem(product))}>Buy Me</Button>
                     
                 
                 </Col>

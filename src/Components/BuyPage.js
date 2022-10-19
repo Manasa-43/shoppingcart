@@ -1,6 +1,6 @@
 import React from "react"
 import Axios from "axios"
-import Card from "../Card"
+import MyCard from "../MyCard"
 // import {random,commerce} from "faker"
 import { Container, Col, Row } from "reactstrap";
 import { v4 as uuidv4 } from 'uuid';
@@ -36,14 +36,12 @@ const BuyPage = ({addItem})=>{
     
 
     return(
-        <div>
-            <Container>
+        <div >
+            <Container >
                 <Row >
                     <Col >
-                        <Card prodItem={product} addItem ={addItem} />
-                    </Col>
-                    
-                    
+                        <MyCard prodItem={product} addItem ={addItem} />
+                    </Col>  
                 </Row>
             </Container>
         </div>

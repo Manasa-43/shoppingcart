@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import BuyPage from './Components/BuyPage';
 import Cart from "./Components/Cart"
 import { Row,Col,Container } from 'reactstrap';
+import './App.css';
 // import { Button} from 'reactstrap';
 // import Card from "./Card"
 // import { ToastContainer, toast } from "react-toastify";
@@ -20,11 +21,13 @@ const addItem = (item)=>{
       
       if (addItemCheck !==-1){
         alert('Item is already there')
-        return;
+       
       }
-      
+      else{
         setCartItem([...cartItem , item])
         console.log("New item",cartItem)
+      }
+        
       
       }
 console.log(cartItem)

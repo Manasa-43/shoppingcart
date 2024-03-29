@@ -29,12 +29,6 @@ const BuyPage = ({addItem})=>{
     React.useEffect(()=>{fetchPhotos()},[])
     
     // console.log(product)
-    
-     
-            
-        
-    
-
     return(
         <div >
             <Container >
